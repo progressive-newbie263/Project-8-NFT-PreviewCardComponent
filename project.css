@@ -1,0 +1,165 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: white;
+}
+
+.divide-line {
+  height: 1px;
+  background-color: hsl(215, 32%, 27%)
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  background-color: white;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  font-family: Outfit, Arial;
+}
+    
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.container {
+  width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 25px;
+  border: none;
+  border-radius: 8px;
+}
+
+.image-nest {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+}
+
+.eyes-container {
+  padding: 125px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.image-nest:hover .image{
+  opacity: 0.5;
+}
+
+.image-nest:hover {
+  opacity: 1;
+  background-color: hsl(178, 100%, 50%);
+}
+
+.image-nest .eyes-container:hover {
+  opacity: 1;
+}
+
+.content {
+  font-family: Outfit;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.intro {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.value {
+  display: flex;
+  flex-direction: row;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+}
+
+.value .text {
+  color: hsl(178, 100%, 50%);
+  margin-left: 10px;
+}
+
+.date .text {
+  color: hsl(215, 51%, 70%);
+  margin-left: 10px;
+}
+
+.author {
+  font-family: Outfit, Arial;
+  font-size: 16px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pfp {
+  width: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: white;
+}
+
+.credit {
+  margin-left: 18px;
+  color: hsl(215, 51%, 70%);
+}
+
+.name {
+  color: white;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.name:hover {
+  color: hsl(178, 100%, 50%);
+}
+
